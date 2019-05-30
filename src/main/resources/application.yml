@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  data:
+    mongodb:
+      database: scooby
+      port: 27017
+      host: ${HOST_MONGO:localhost}
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+    deserialization:
+      fail-on-unknown-properties: true
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
